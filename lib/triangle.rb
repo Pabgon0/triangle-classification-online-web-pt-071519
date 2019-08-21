@@ -13,7 +13,7 @@ class Triangle
     sides12 = @@sides[0] + @@sides[1]
     sides13 = @@sides[0] + @@sides[2]
     sides23 = @@sides[1] + @@sides[3]
-    if (@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)
+    if @@sides.each {|side| side <= 0}
       raise TriangleError
     elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
       raise TriangleError
