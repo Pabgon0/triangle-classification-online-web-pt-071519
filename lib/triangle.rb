@@ -18,6 +18,8 @@ class Triangle
   end
   
   def kind
+    if real_triangle
+    end
     
   end
   
