@@ -8,15 +8,10 @@ class Triangle
     @side3 = side3
   end
   
-  def sides
-    @sides < side1
-    @sides
-  end
-  
   def kind
     if @side1 <= 0 || @side2 <= 0 || @side3 <= 0
       raise TriangleError
-    elsif (@side_1 + @side_2 <= @side_3) || (@side_1 + @side_3 <= @side_2) || (@side_2 + @side_3 <= @side_1)
+    elsif ((@side_1 + @side_2) <= @side_3) || (@side_1 + @side_3 <= @side_2) || (@side_2 + @side_3 <= @side_1)
       raise TriangleError
     else
       if (@side_1 == @side_2) && (@side_2 == @side_3)
