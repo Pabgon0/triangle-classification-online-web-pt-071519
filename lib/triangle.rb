@@ -9,6 +9,10 @@ class Triangle
     @@sides << side3
   end
   
+  def real_triangle
+    
+  end
+  
   def kind
     
   end
